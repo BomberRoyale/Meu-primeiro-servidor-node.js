@@ -97,3 +97,10 @@ Executa o servidor lendo diretamente o arquivo TypeScript, sem precisar compilar
 node build/server.js
 ```
 Executa a versão final já compilada (JavaScript puro). Este é o comando oficial que deve ser usado quando o projeto for para o ar (por exemplo, ao rodar dentro de um contêiner Docker no seu ambiente em nuvem).
+<br><br>
+
+**Links para baixar aplicarivo**
+<br>
+Versões: *Windows e Android*
+<br>
+Link: https://drive.google.com/drive/folders/1vn9mN5ECmH5botjHh7so757GUVbdN_tx?usp=sharing
