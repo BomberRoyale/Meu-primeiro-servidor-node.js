@@ -34,8 +34,28 @@ A flag -D instala estes pacotes apenas para o ambiente de desenvolvimento. Os pa
 ```bash
 npx tsc --init
 ```
-Cria o arquivo tsconfig.json. É nele que definimos as regras do compilador TypeScript, como a versão do JavaScript que será gerada e as pastas de entrada (src) e saída (build ou dist).
-<br><br><br>
+Cria o arquivo tsconfig.json. É nele que definimos as regras do compilador TypeScript, como a versão do JavaScript que será gerada e as pastas de entrada (src) e saída (build ou dist).<br><br>
+**Para este projeto usaremos estas regras:**
+```bash
+{
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "./src",
+    "rootDirs": ["./src"],   
+    "outDir": "./build",
+
+    "module": "commonjs",
+    "target": "ESNext",
+
+    // Other Outputs
+    "esModuleInterop":true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  }
+}
+```
+<br>
 
 **5. Estrutura de Pastas**
 
@@ -43,6 +63,13 @@ Cria o arquivo tsconfig.json. É nele que definimos as regras do compilador Type
 mkdir -p src/core
 ```
 Cria a estrutura inicial de diretórios do projeto. O parâmetro -p garante que o terminal crie a pasta src e a subpasta core de uma vez só, ignorando erros caso elas já existam.
+<br><br><br>
+
+**6. Finalize a estrutura criando os arquivos**
+
+-> Crie um arquivo ".ts" em **src** chamado ***server.ts***
+<br><br>
+-> Baixe o arquivo *socket2.ts* e salve-o na pasta **src/core**
 <br><br><br>
 
 ### Scripts de Compilação e Execução
